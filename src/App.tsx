@@ -1,11 +1,14 @@
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import { ChakraProvider, theme } from '@chakra-ui/react';
 
-import { ColorModeSwitcher } from './components/ColorModeSwitcher';
+import { Navbar } from './components/Navbar';
 
 export const App = () => {
     return (
         <ChakraProvider theme={theme}>
-            <ColorModeSwitcher />
+            <HashRouter>
+                <Navbar />
+            </HashRouter>
         </ChakraProvider>
     );
 };
