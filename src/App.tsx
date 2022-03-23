@@ -1,11 +1,22 @@
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import { ChakraProvider, theme } from '@chakra-ui/react';
 
-import { ColorModeSwitcher } from './components/ColorModeSwitcher';
+import { Navbar } from './components/Navbar';
+import { About } from './pages/About';
+import { Home } from './pages/Home';
+import { Projects } from './pages/Projects';
 
 export const App = () => {
     return (
         <ChakraProvider theme={theme}>
-            <ColorModeSwitcher />
+            <HashRouter>
+                <Navbar />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/projects" element={<Projects />} />
+                </Routes>
+            </HashRouter>
         </ChakraProvider>
     );
 };
