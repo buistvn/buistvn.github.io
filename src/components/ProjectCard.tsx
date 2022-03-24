@@ -1,8 +1,10 @@
 import {
+    Box,
+    Divider,
     Flex,
-    Grid,
     Heading,
     Icon,
+    Image,
     Link,
     Text,
     useColorModeValue,
@@ -18,16 +20,31 @@ type ProjectCardProps = {
 export const ProjectCard = ({ project }: ProjectCardProps) => {
     const borderColor = useColorModeValue('gray.200', 'gray.700');
     const backgroundColor = useColorModeValue('white', 'gray.900');
+    const textColor = useColorModeValue('gray.600', 'gray.400');
 
     return (
-        <Grid>
-            <Flex
-                flexDirection="column"
-                rowGap="8px"
-                padding="16px"
+        <Box position="relative">
+            <Image
+                src={project.image}
+                width="80%"
                 border="1px"
                 borderColor={borderColor}
                 borderRadius="8px"
+                boxShadow="md"
+            />
+            <Flex
+                flexDirection="column"
+                rowGap="8px"
+                position="absolute"
+                top="50%"
+                right="0%"
+                transform="translate(0%, -50%)"
+                width="40%"
+                padding="24px"
+                border="1px"
+                borderColor={borderColor}
+                borderRadius="8px"
+                boxShadow="md"
                 backgroundColor={backgroundColor}
             >
                 <Flex justifyContent="space-between" alignItems="center">
@@ -37,8 +54,8 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
                             <Link href={project.repoLink}>
                                 <Icon
                                     as={FaGithub}
-                                    width="30px"
-                                    height="30px"
+                                    width="24px"
+                                    height="24px"
                                 />
                             </Link>
                         )}
@@ -46,15 +63,16 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
                             <Link href={project.demoLink}>
                                 <Icon
                                     as={FaExternalLinkAlt}
-                                    width="30px"
-                                    height="30px"
+                                    width="24px"
+                                    height="24px"
                                 />
                             </Link>
                         )}
                     </Flex>
                 </Flex>
-                <Text>{project.description}</Text>
+                <Divider />
+                <Text color={textColor}>{project.description}</Text>
             </Flex>
-        </Grid>
+        </Box>
     );
 };
