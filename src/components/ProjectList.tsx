@@ -11,7 +11,7 @@ export const ProjectList = ({ projects }: ProjectListProps) => {
     return (
         <Flex flexDirection="column" rowGap="32px">
             {projects.map((project) => (
-                <ProjectCard project={project} key={project.id} />
+                <ProjectCard project={project} key={project.name} />
             ))}
         </Flex>
     );

@@ -6,6 +6,9 @@ import {
     Icon,
     Image,
     Link,
+    Tag,
+    TagLabel,
+    TagLeftIcon,
     Text,
     useColorModeValue,
 } from '@chakra-ui/react';
@@ -69,6 +72,14 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
                             </Link>
                         )}
                     </Flex>
+                </Flex>
+                <Flex columnGap="8px">
+                    {project.tags.map((tag) => (
+                        <Tag colorScheme={tag.color} key={tag.name}>
+                            <TagLeftIcon as={tag.icon} />
+                            <TagLabel>{tag.name}</TagLabel>
+                        </Tag>
+                    ))}
                 </Flex>
                 <Divider />
                 <Text color={textColor}>{project.description}</Text>
