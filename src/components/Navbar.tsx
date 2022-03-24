@@ -5,7 +5,7 @@ import { ColorModeSwitcher } from './ColorModeSwitcher';
 
 export const Navbar = () => {
     return (
-        <Flex justifyContent="center" position="sticky" zIndex={1} top="0px">
+        <Flex justifyContent="center">
             <Flex
                 justifyContent="space-between"
                 alignItems="center"
