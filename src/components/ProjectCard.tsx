@@ -23,7 +23,7 @@ type ProjectCardProps = {
 export const ProjectCard = ({ project }: ProjectCardProps) => {
     const borderColor = useColorModeValue('gray.200', 'gray.700');
     const backgroundColor = useColorModeValue('white', 'gray.900');
-    const iconColor = useColorModeValue('teal.500', 'teal.300');
+    const iconColor = useColorModeValue('green.500', 'green.300');
     const textColor = useColorModeValue('gray.600', 'gray.400');
 
     return (
