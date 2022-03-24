@@ -1,10 +1,12 @@
 import { HashRouter, Route, Routes } from 'react-router-dom';
-import { ChakraProvider, theme } from '@chakra-ui/react';
+import { ChakraProvider } from '@chakra-ui/react';
+import '@fontsource/inter/variable.css';
 
 import { Navbar } from './components/Navbar';
 import { About } from './pages/About';
 import { Home } from './pages/Home';
 import { Projects } from './pages/Projects';
+import { theme } from './styles/theme';
 
 export const App = () => {
     return (

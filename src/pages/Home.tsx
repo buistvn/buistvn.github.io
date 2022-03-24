@@ -47,7 +47,7 @@ export const Home = () => {
                 top="42%"
                 right="50%"
                 transform="translate(50%, -50%)"
-                fontSize="60px"
+                fontSize="72px"
             >
                 Steven Bui
             </Heading>
