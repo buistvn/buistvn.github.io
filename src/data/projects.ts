@@ -11,6 +11,15 @@ export interface Project {
 
 export const projects: Project[] = [
     {
+        name: 'Portfolio',
+        description:
+            "You're here! I made this website to showcase some of the projects that I've been working on.",
+        tags: [tags['typescript'], tags['react'], tags['chakraui']],
+        image: '/portfolio.png',
+        repoLink: 'https://github.com/buistvn/portfolio',
+        demoLink: undefined,
+    },
+    {
         name: 'Game Collection',
         description:
             'Game Collection is a mobile app for browsing video games using data provided by the RAWG API. Users can find information on games such as ratings, developers, stores, screenshots, and trailers. While searching for games, users can narrow down their results by configuring the filters in the settings. The app has a local database which allows users to save games by favoriting them.',
