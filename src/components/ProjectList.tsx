@@ -9,7 +9,7 @@ type ProjectListProps = {
 
 export const ProjectList = ({ projects }: ProjectListProps) => {
     return (
-        <Flex flexDirection="column" rowGap="32px">
+        <Flex flexDirection="column" rowGap="64px">
             {projects.map((project) => (
                 <ProjectCard project={project} key={project.name} />
             ))}

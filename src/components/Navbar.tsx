@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-import { Button, Flex, Text } from '@chakra-ui/react';
+import { Button, Flex, Icon, Text } from '@chakra-ui/react';
+import { SiCoderwall } from 'react-icons/si';
 
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 
@@ -13,9 +14,12 @@ export const Navbar = () => {
                 paddingY="16px"
             >
                 <Link to="/">
-                    <Text fontSize="18px" fontWeight="500">
-                        Steven Bui
-                    </Text>
+                    <Flex alignItems="center" columnGap="4px">
+                        <Icon as={SiCoderwall} width="24px" height="24px" />
+                        <Text fontSize="32px" fontWeight="700" lineHeight="1">
+                            SB
+                        </Text>
+                    </Flex>
                 </Link>
                 <Flex alignItems="center" columnGap="16px">
                     <Link to="/about">
