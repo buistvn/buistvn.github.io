@@ -1,19 +1,11 @@
 import { Link } from 'react-router-dom';
-import { Button, Flex, Text, useColorModeValue } from '@chakra-ui/react';
+import { Button, Flex, Text } from '@chakra-ui/react';
 
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 
 export const Navbar = () => {
-    const backgroundColor = useColorModeValue('white', 'gray.800');
-
     return (
-        <Flex
-            justifyContent="center"
-            position="sticky"
-            zIndex={1}
-            top="0px"
-            backgroundColor={backgroundColor}
-        >
+        <Flex justifyContent="center">
             <Flex
                 justifyContent="space-between"
                 alignItems="center"

@@ -23,6 +23,7 @@ type ProjectCardProps = {
 export const ProjectCard = ({ project }: ProjectCardProps) => {
     const borderColor = useColorModeValue('gray.200', 'gray.700');
     const backgroundColor = useColorModeValue('white', 'gray.900');
+    const iconColor = useColorModeValue('teal.500', 'teal.300');
     const textColor = useColorModeValue('gray.600', 'gray.400');
 
     return (
@@ -52,22 +53,32 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
             >
                 <Flex justifyContent="space-between" alignItems="center">
                     <Heading>{project.name}</Heading>
-                    <Flex alignItems="center">
+                    <Flex alignItems="center" columnGap="16px">
                         {project.repoLink && (
-                            <Link href={project.repoLink}>
+                            <Link
+                                href={project.repoLink}
+                                width="24px"
+                                height="24px"
+                            >
                                 <Icon
                                     as={FaGithub}
-                                    width="24px"
-                                    height="24px"
+                                    width="100%"
+                                    height="100%"
+                                    _hover={{ color: iconColor }}
                                 />
                             </Link>
                         )}
                         {project.demoLink && (
-                            <Link href={project.demoLink}>
+                            <Link
+                                href={project.demoLink}
+                                width="24px"
+                                height="24px"
+                            >
                                 <Icon
                                     as={FaExternalLinkAlt}
-                                    width="24px"
-                                    height="24px"
+                                    width="100%"
+                                    height="100%"
+                                    _hover={{ color: iconColor }}
                                 />
                             </Link>
                         )}

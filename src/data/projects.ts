@@ -10,22 +10,6 @@ export interface Project {
 }
 
 export const projects: Project[] = [
-    /*
-    {
-        name: 'Lainavi',
-        description: '',
-        image: '',
-        repoLink: '',
-        demoLink: undefined,
-    },
-    {
-        name: 'Portfolio',
-        description: '',
-        image: '',
-        repoLink: '',
-        demoLink: '',
-    },
-    */
     {
         name: 'Game Collection',
         description:

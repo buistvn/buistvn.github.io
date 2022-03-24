@@ -5,11 +5,11 @@ import { projects } from '../data/projects';
 
 export const Projects = () => {
     return (
-        <Flex justifyContent="center" marginY="32px">
+        <Flex justifyContent="center" marginY="64px">
             <Flex
                 flexDirection="column"
                 alignItems="center"
-                rowGap="32px"
+                rowGap="64px"
                 width="75%"
             >
                 <Heading>Projects</Heading>
