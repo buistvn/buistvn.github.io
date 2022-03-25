@@ -1,4 +1,5 @@
 import { extendTheme } from '@chakra-ui/react';
+import { mode } from '@chakra-ui/theme-tools';
 
 const breakpoints = {
     sm: '375px',
@@ -18,10 +19,19 @@ const fonts = {
     body: 'InterVariable, sans-serif',
 };
 
+const styles = {
+    global: (props: any) => ({
+        body: {
+            background: mode('white', 'gray.900')(props),
+        },
+    }),
+};
+
 const overrides = {
     breakpoints,
     config,
     fonts,
+    //styles,
 };
 
 export const theme = extendTheme(overrides);

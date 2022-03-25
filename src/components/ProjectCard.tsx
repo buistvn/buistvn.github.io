@@ -33,7 +33,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
                 width="80%"
                 border="1px"
                 borderColor={borderColor}
-                borderRadius="8px"
+                borderRadius="16px"
                 boxShadow="md"
             />
             <Flex
@@ -47,7 +47,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
                 padding="24px"
                 border="1px"
                 borderColor={borderColor}
-                borderRadius="8px"
+                borderRadius="16px"
                 boxShadow="md"
                 backgroundColor={backgroundColor}
             >
