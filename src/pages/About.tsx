@@ -6,11 +6,14 @@ import {
     Image,
     Link,
     Text,
+    useColorModeValue,
     useMediaQuery,
 } from '@chakra-ui/react';
 import { FaEnvelope, FaFileAlt, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export const About = () => {
+    const linkColor = useColorModeValue('green.500', 'green.200');
+
     const [isLargerThan768] = useMediaQuery('(min-width: 768px)');
 
     return (
@@ -30,23 +33,29 @@ export const About = () => {
                         gap={['32px', '32px', '64px', '64px']}
                     >
                         <Text fontSize={['16px', '16px', '18px', '20px']}>
-                            Hi, I'm Steven. I'm currently a fourth year student
-                            at Oregon State University majoring in Computer
-                            Science.
+                            Hi, my name is Steven. I'm currently a fourth year
+                            student at Oregon State University majoring in
+                            Computer Science.
                             <br />
                             <br />
                             During my undergraduate education at OSU, I worked
                             on projects and took a variety of courses to explore
-                            the different fields in Computer Science. I spent
-                            the summer of 2021 as a Software Engineering Intern
-                            at Bright.md where I gained experience in web
-                            development. I'm also interested in cloud app
-                            development, operating systems, and game
-                            development.
+                            the different fields of Computer Science. I spent
+                            the summer of 2021 working as a{' '}
+                            <Link
+                                href="https://bright.md/blog/where-software-healthcare-meet-reflections-from-bright-mds-summer-engineering-intern/"
+                                isExternal
+                                color={linkColor}
+                            >
+                                Software Engineering Intern at Bright.md
+                            </Link>{' '}
+                            where I gained experience in web development. I'm
+                            also interested in cloud app development, operating
+                            systems, and game development.
                             <br />
                             <br />
-                            In my free time, I enjoy watching films, playing
-                            video games, learning piano, and discovering new
+                            In my free time, I enjoy watching movies, playing
+                            strategy games, learning piano, and discovering new
                             music.
                         </Text>
                         <Image
@@ -69,6 +78,7 @@ export const About = () => {
                         <Button
                             as={Link}
                             href="https://www.linkedin.com/in/buistvn/"
+                            isExternal
                             size={isLargerThan768 ? 'md' : 'sm'}
                             colorScheme="green"
                             leftIcon={<FaLinkedin />}
@@ -78,6 +88,7 @@ export const About = () => {
                         <Button
                             as={Link}
                             href="https://github.com/buistvn"
+                            isExternal
                             size={isLargerThan768 ? 'md' : 'sm'}
                             colorScheme="green"
                             leftIcon={<FaGithub />}
@@ -87,6 +98,7 @@ export const About = () => {
                         <Button
                             as={Link}
                             href="mailto:bui.stvn@gmail.com"
+                            isExternal
                             size={isLargerThan768 ? 'md' : 'sm'}
                             colorScheme="green"
                             leftIcon={<FaEnvelope />}
@@ -97,6 +109,7 @@ export const About = () => {
                         <Button
                             as={Link}
                             href=""
+                            isExternal
                             size={isLargerThan768 ? 'md' : 'sm'}
                             colorScheme="green"
                             leftIcon={<FaFileAlt />}

@@ -72,6 +72,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
                         {project.repoLink && (
                             <Link
                                 href={project.repoLink}
+                                isExternal
                                 width="24px"
                                 height="24px"
                             >
@@ -86,6 +87,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
                         {project.demoLink && (
                             <Link
                                 href={project.demoLink}
+                                isExternal
                                 width="24px"
                                 height="24px"
                             >
@@ -99,7 +101,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
                         )}
                     </Flex>
                 </Flex>
-                <Flex columnGap="8px">
+                <Flex flexWrap="wrap" gap="8px">
                     {project.tags.map((tag) => (
                         <Tag
                             size={isLargerThan768 ? 'md' : 'sm'}
