@@ -11,6 +11,7 @@ import {
     TagLeftIcon,
     Text,
     useColorModeValue,
+    useMediaQuery,
 } from '@chakra-ui/react';
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 
@@ -26,37 +27,52 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
     const iconColor = useColorModeValue('green.500', 'green.200');
     const textColor = useColorModeValue('gray.600', 'gray.400');
 
+    const [isLargerThan768] = useMediaQuery('(min-width: 768px)');
+
     return (
         <Box position="relative">
             <Image
                 src={project.image}
-                width="80%"
+                width={['100%', '100%', '100%', '100%', '80%']}
                 border="1px"
                 borderColor={borderColor}
-                borderRadius="16px"
+                borderTopRadius="16px"
+                borderBottomRadius={['0px', '0px', '0px', '0px', '16px']}
                 boxShadow="md"
             />
             <Flex
                 flexDirection="column"
                 rowGap="8px"
-                position="absolute"
-                top="50%"
+                position={['static', 'static', 'static', 'static', 'absolute']}
+                top={['100%', '100%', '100%', '100%', '50%']}
                 right="0%"
-                transform="translate(0%, -50%)"
-                width="40%"
-                padding="24px"
+                transform={[
+                    'none',
+                    'none',
+                    'none',
+                    'none',
+                    'translate(0%, -50%)',
+                ]}
+                width={['100%', '100%', '100%', '100%', '40%']}
+                padding={['16px', '16px', '24px', '24px', '24px']}
                 border="1px"
                 borderColor={borderColor}
-                borderRadius="16px"
+                borderTopRadius={['0px', '0px', '0px', '0px', '16px']}
+                borderBottomRadius="16px"
                 boxShadow="md"
                 backgroundColor={backgroundColor}
             >
                 <Flex justifyContent="space-between" alignItems="center">
-                    <Heading>{project.name}</Heading>
+                    <Heading
+                        fontSize={['24px', '24px', '36px', '36px', '36px']}
+                    >
+                        {project.name}
+                    </Heading>
                     <Flex alignItems="center" columnGap="16px">
                         {project.repoLink && (
                             <Link
                                 href={project.repoLink}
+                                isExternal
                                 width="24px"
                                 height="24px"
                             >
@@ -71,6 +87,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
                         {project.demoLink && (
                             <Link
                                 href={project.demoLink}
+                                isExternal
                                 width="24px"
                                 height="24px"
                             >
@@ -84,9 +101,13 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
                         )}
                     </Flex>
                 </Flex>
-                <Flex columnGap="8px">
+                <Flex flexWrap="wrap" gap="8px">
                     {project.tags.map((tag) => (
-                        <Tag colorScheme={tag.color} key={tag.name}>
+                        <Tag
+                            size={isLargerThan768 ? 'md' : 'sm'}
+                            colorScheme={tag.color}
+                            key={tag.name}
+                        >
                             <TagLeftIcon as={tag.icon} />
                             <TagLabel>{tag.name}</TagLabel>
                         </Tag>
