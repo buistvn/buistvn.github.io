@@ -31,7 +31,7 @@ const overrides = {
     breakpoints,
     config,
     fonts,
-    //styles,
+    styles,
 };
 
 export const theme = extendTheme(overrides);
