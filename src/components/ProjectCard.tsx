@@ -23,7 +23,7 @@ type ProjectCardProps = {
 export const ProjectCard = ({ project }: ProjectCardProps) => {
     const borderColor = useColorModeValue('gray.200', 'gray.700');
     const backgroundColor = useColorModeValue('white', 'gray.900');
-    const iconColor = useColorModeValue('green.500', 'green.300');
+    const iconColor = useColorModeValue('green.500', 'green.200');
     const textColor = useColorModeValue('gray.600', 'gray.400');
 
     return (
@@ -33,7 +33,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
                 width="80%"
                 border="1px"
                 borderColor={borderColor}
-                borderRadius="8px"
+                borderRadius="16px"
                 boxShadow="md"
             />
             <Flex
@@ -47,7 +47,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
                 padding="24px"
                 border="1px"
                 borderColor={borderColor}
-                borderRadius="8px"
+                borderRadius="16px"
                 boxShadow="md"
                 backgroundColor={backgroundColor}
             >
