@@ -6,17 +6,30 @@ import {
     Image,
     Link,
     Text,
+    useMediaQuery,
 } from '@chakra-ui/react';
 import { FaEnvelope, FaFileAlt, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export const About = () => {
+    const [isLargerThan768] = useMediaQuery('(min-width: 768px)');
+
     return (
         <Flex justifyContent="center" marginY="64px">
-            <Flex flexDirection="column" rowGap="64px" width="75%">
+            <Flex
+                flexDirection="column"
+                rowGap={['32px', '32px', '64px', '64px']}
+                width={['95%', '95%', '85%', '75%']}
+            >
                 <Flex flexDirection="column" rowGap="16px">
-                    <Heading fontSize="48px">About Me</Heading>
-                    <Flex alignItems="center" columnGap="64px">
-                        <Text fontSize="20px">
+                    <Heading fontSize={['36px', '36px', '48px', '48px']}>
+                        About Me
+                    </Heading>
+                    <Flex
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems="center"
+                        gap={['32px', '32px', '64px', '64px']}
+                    >
+                        <Text fontSize={['16px', '16px', '18px', '20px']}>
                             Hi, I'm Steven. I'm currently a fourth year student
                             at Oregon State University majoring in Computer
                             Science.
@@ -46,11 +59,17 @@ export const About = () => {
                 </Flex>
                 <Divider />
                 <Flex flexDirection="column" rowGap="16px">
-                    <Heading fontSize="48px">Contact</Heading>
-                    <Flex columnGap="16px">
+                    <Heading fontSize={['36px', '36px', '48px', '48px']}>
+                        Contact
+                    </Heading>
+                    <Flex
+                        flexDirection={['column', 'row', 'row', 'row']}
+                        gap="16px"
+                    >
                         <Button
                             as={Link}
                             href="https://www.linkedin.com/in/buistvn/"
+                            size={isLargerThan768 ? 'md' : 'sm'}
                             colorScheme="green"
                             leftIcon={<FaLinkedin />}
                         >
@@ -59,6 +78,7 @@ export const About = () => {
                         <Button
                             as={Link}
                             href="https://github.com/buistvn"
+                            size={isLargerThan768 ? 'md' : 'sm'}
                             colorScheme="green"
                             leftIcon={<FaGithub />}
                         >
@@ -67,6 +87,7 @@ export const About = () => {
                         <Button
                             as={Link}
                             href="mailto:bui.stvn@gmail.com"
+                            size={isLargerThan768 ? 'md' : 'sm'}
                             colorScheme="green"
                             leftIcon={<FaEnvelope />}
                         >
@@ -76,6 +97,7 @@ export const About = () => {
                         <Button
                             as={Link}
                             href=""
+                            size={isLargerThan768 ? 'md' : 'sm'}
                             colorScheme="green"
                             leftIcon={<FaFileAlt />}
                         >

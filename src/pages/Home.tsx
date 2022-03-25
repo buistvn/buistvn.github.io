@@ -47,7 +47,8 @@ export const Home = () => {
                 top="42%"
                 right="50%"
                 transform="translate(50%, -50%)"
-                fontSize="72px"
+                fontSize={['36px', '48px', '60px', '72px']}
+                whiteSpace="nowrap"
             >
                 Steven Bui
             </Heading>
