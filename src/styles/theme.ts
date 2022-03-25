@@ -2,10 +2,10 @@ import { extendTheme } from '@chakra-ui/react';
 import { mode } from '@chakra-ui/theme-tools';
 
 const breakpoints = {
-    sm: '375px',
+    sm: '320px',
     md: '768px',
-    lg: '1024px',
-    xl: '1440px',
+    lg: '960px',
+    xl: '1200px',
     '2xl': '1536px',
 };
 

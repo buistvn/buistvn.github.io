@@ -10,7 +10,7 @@ export const Navbar = () => {
             <Flex
                 justifyContent="space-between"
                 alignItems="center"
-                width="75%"
+                width={['96%', '96%', '96%', '75%']}
                 paddingY="16px"
             >
                 <Link to="/">
