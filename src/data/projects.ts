@@ -16,8 +16,8 @@ export const projects: Project[] = [
             "A personal website that showcases the projects I've been working on",
         tags: [tags['typescript'], tags['react'], tags['chakraui']],
         image: '/portfolio.png',
-        repoLink: 'https://github.com/buistvn/portfolio',
-        demoLink: undefined,
+        repoLink: 'https://github.com/buistvn/buistvn.github.io',
+        demoLink: 'https://buistvn.github.io',
     },
     {
         name: 'Game Collection',
