@@ -25,7 +25,7 @@ export const projects: Project[] = [
             'A mobile app that lets users browse video games and manage their game collections',
         tags: [tags['kotlin'], tags['androidstudio']],
         image: '/game-collection.png',
-        repoLink: 'https://github.com/osu-cs492-w22/game-collection',
+        repoLink: 'https://github.com/buistvn/game-collection',
         demoLink: undefined,
     },
     {
@@ -34,7 +34,7 @@ export const projects: Project[] = [
             'A web app that lets users discover movies and keep track of their favorites and watchlists',
         tags: [tags['javascript'], tags['nextjs'], tags['chakraui']],
         image: '/muvi.png',
-        repoLink: 'https://github.com/osu-cs499-w22/muvi',
+        repoLink: 'https://github.com/buistvn/muvi',
         demoLink: undefined,
     },
     {
