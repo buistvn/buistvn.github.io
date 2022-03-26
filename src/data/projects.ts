@@ -11,13 +11,13 @@ export interface Project {
 
 export const projects: Project[] = [
     {
-        name: 'Portfolio',
+        name: 'stevenbui.dev',
         description:
             "A personal website that showcases the projects I've been working on",
         tags: [tags['typescript'], tags['react'], tags['chakraui']],
         image: '/portfolio.png',
-        repoLink: 'https://github.com/buistvn/buistvn.github.io',
-        demoLink: 'https://buistvn.github.io',
+        repoLink: 'https://github.com/buistvn/stevenbui.dev',
+        demoLink: 'https://stevenbui.dev',
     },
     {
         name: 'Game Collection',

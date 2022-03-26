@@ -1,4 +1,4 @@
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { ChakraProvider, Hide, Show } from '@chakra-ui/react';
 import '@fontsource/inter/variable.css';
 
@@ -12,7 +12,7 @@ import { theme } from './styles/theme';
 export const App = () => {
     return (
         <ChakraProvider theme={theme}>
-            <HashRouter>
+            <BrowserRouter>
                 <Hide below="md">
                     <Navbar />
                 </Hide>
@@ -24,7 +24,7 @@ export const App = () => {
                     <Route path="/about" element={<About />} />
                     <Route path="/projects" element={<Projects />} />
                 </Routes>
-            </HashRouter>
+            </BrowserRouter>
         </ChakraProvider>
     );
 };
