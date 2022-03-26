@@ -12,7 +12,7 @@ import { theme } from './styles/theme';
 export const App = () => {
     return (
         <ChakraProvider theme={theme}>
-            <BrowserRouter>
+            <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <Hide below="md">
                     <Navbar />
                 </Hide>

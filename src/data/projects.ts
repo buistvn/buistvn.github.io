@@ -37,4 +37,13 @@ export const projects: Project[] = [
         repoLink: 'https://github.com/osu-cs499-w22/muvi',
         demoLink: undefined,
     },
+    {
+        name: 'Lainavi',
+        description:
+            'A Discord bot that features commands for moderation, alerts, and gaming',
+        tags: [tags['javascript'], tags['discordjs']],
+        image: '/lainavi.png',
+        repoLink: 'https://github.com/buistvn/lainavi',
+        demoLink: undefined,
+    },
 ];

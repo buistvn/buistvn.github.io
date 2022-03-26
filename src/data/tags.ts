@@ -2,6 +2,7 @@ import { IconType } from 'react-icons';
 import {
     SiAndroid,
     SiChakraui,
+    SiDiscord,
     SiJavascript,
     SiKotlin,
     SiNextdotjs,
@@ -26,6 +27,11 @@ export const tags: Record<string, Tag> = {
         name: 'Chakra UI',
         color: 'teal',
         icon: SiChakraui,
+    },
+    discordjs: {
+        name: 'discord.js',
+        color: 'blue',
+        icon: SiDiscord,
     },
     javascript: {
         name: 'JavaScript',
