@@ -25,7 +25,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
     const borderColor = useColorModeValue('gray.200', 'gray.700');
     const backgroundColor = useColorModeValue('white', 'gray.900');
     const iconColor = useColorModeValue('green.500', 'green.200');
-    const textColor = useColorModeValue('gray.600', 'gray.400');
+    const textColor = useColorModeValue('gray.500', 'gray.400');
 
     const [isLargerThan768] = useMediaQuery('(min-width: 768px)');
 
