@@ -43,7 +43,7 @@ export const About = () => {
                             the different fields of Computer Science. I spent
                             the summer of 2021 working as a{' '}
                             <Link
-                                href="https://bright.md/blog/where-software-healthcare-meet-reflections-from-bright-mds-summer-engineering-intern/"
+                                href="https://bright.md/blog/where-software-healthcare-meet-reflections-from-bright-mds-summer-engineering-intern"
                                 isExternal
                                 color={linkColor}
                             >
@@ -77,7 +77,7 @@ export const About = () => {
                     >
                         <Button
                             as={Link}
-                            href="https://www.linkedin.com/in/buistvn/"
+                            href="https://www.linkedin.com/in/buistvn"
                             isExternal
                             size={isLargerThan768 ? 'md' : 'sm'}
                             colorScheme="green"
