@@ -22,7 +22,7 @@ export const projects: Project[] = [
     */
     {
         name: 'ML Tower Defense',
-        description: 'My Senior Capstone project that is currently in progress',
+        description: 'Senior Capstone project',
         tags: [tags['csharp'], tags['unity']],
         image: '/ml-tower-defense.png',
         repoLink: 'https://github.com/ML-Tower-Defense/capstone',
@@ -50,7 +50,7 @@ export const projects: Project[] = [
         name: 'Lainavi',
         description:
             'A Discord bot that features commands for moderation, alerts, and gaming',
-        tags: [tags['javascript'], tags['discordjs']],
+        tags: [tags['javascript']],
         image: '/lainavi.png',
         repoLink: 'https://github.com/buistvn/lainavi',
         demoLink: undefined,

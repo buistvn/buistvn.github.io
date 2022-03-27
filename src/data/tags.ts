@@ -3,7 +3,6 @@ import {
     SiAndroid,
     SiChakraui,
     SiCsharp,
-    SiDiscord,
     SiExpress,
     SiJavascript,
     SiKotlin,
@@ -36,11 +35,6 @@ export const tags: Record<string, Tag> = {
         name: 'C#',
         color: 'green',
         icon: SiCsharp,
-    },
-    discordjs: {
-        name: 'discord.js',
-        color: 'blue',
-        icon: SiDiscord,
     },
     express: {
         name: 'Express',

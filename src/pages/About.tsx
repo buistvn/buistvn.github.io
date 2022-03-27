@@ -49,9 +49,9 @@ export const About = () => {
                             >
                                 Software Engineering Intern at Bright.md
                             </Link>{' '}
-                            where I learned a lot about the world of software
-                            and tech. I'm interested in web development, cloud
-                            app development, and operating systems.
+                            which taught me a lot about the world of software
+                            and tech. I'm interested in cloud app development,
+                            web development, and operating systems.
                             <br />
                             <br />
                             In my free time, I enjoy watching movies, learning
