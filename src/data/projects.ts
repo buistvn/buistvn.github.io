@@ -10,14 +10,23 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+    /*
     {
-        name: 'stevenbui.dev',
-        description:
-            "A personal website that showcases the projects I've been working on",
-        tags: [tags['typescript'], tags['react'], tags['chakraui']],
-        image: '/portfolio.png',
-        repoLink: 'https://github.com/buistvn/stevenbui.dev',
-        demoLink: 'https://stevenbui.dev',
+        name: "",
+        description: "",
+        tags: [],
+        image : "",
+        repoLink: "",
+        demoLink: "",
+    },
+    */
+    {
+        name: 'ML Tower Defense',
+        description: 'My Senior Capstone project that is currently in progress',
+        tags: [tags['csharp'], tags['unity']],
+        image: '/ml-tower-defense.png',
+        repoLink: 'https://github.com/ML-Tower-Defense/capstone',
+        demoLink: undefined,
     },
     {
         name: 'Game Collection',
@@ -44,6 +53,29 @@ export const projects: Project[] = [
         tags: [tags['javascript'], tags['discordjs']],
         image: '/lainavi.png',
         repoLink: 'https://github.com/buistvn/lainavi',
+        demoLink: undefined,
+    },
+    {
+        name: 'stevenbui.dev',
+        description:
+            "A personal website that showcases the projects I've been working on",
+        tags: [tags['typescript'], tags['react'], tags['chakraui']],
+        image: '/portfolio.png',
+        repoLink: 'https://github.com/buistvn/stevenbui.dev',
+        demoLink: 'https://stevenbui.dev',
+    },
+    {
+        name: 'CLOUDVOTE',
+        description:
+            'A web app that lets users create proposals for topics that they care about',
+        tags: [
+            tags['javascript'],
+            tags['react'],
+            tags['express'],
+            tags['mongodb'],
+        ],
+        image: '/cloudvote.png',
+        repoLink: 'https://github.com/buistvn/cloudvote',
         demoLink: undefined,
     },
 ];

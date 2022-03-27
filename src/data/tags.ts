@@ -2,13 +2,17 @@ import { IconType } from 'react-icons';
 import {
     SiAndroid,
     SiChakraui,
+    SiCsharp,
     SiDiscord,
+    SiExpress,
     SiJavascript,
     SiKotlin,
+    SiMongodb,
     SiNextdotjs,
     SiPython,
     SiReact,
     SiTypescript,
+    SiUnity,
 } from 'react-icons/si';
 
 export interface Tag {
@@ -28,10 +32,20 @@ export const tags: Record<string, Tag> = {
         color: 'teal',
         icon: SiChakraui,
     },
+    csharp: {
+        name: 'C#',
+        color: 'green',
+        icon: SiCsharp,
+    },
     discordjs: {
         name: 'discord.js',
         color: 'blue',
         icon: SiDiscord,
+    },
+    express: {
+        name: 'Express',
+        color: 'gray',
+        icon: SiExpress,
     },
     javascript: {
         name: 'JavaScript',
@@ -42,6 +56,11 @@ export const tags: Record<string, Tag> = {
         name: 'Kotlin',
         color: 'purple',
         icon: SiKotlin,
+    },
+    mongodb: {
+        name: 'MongoDB',
+        color: 'green',
+        icon: SiMongodb,
     },
     nextjs: {
         name: 'Next.js',
@@ -62,5 +81,10 @@ export const tags: Record<string, Tag> = {
         name: 'TypeScript',
         color: 'blue',
         icon: SiTypescript,
+    },
+    unity: {
+        name: 'Unity',
+        color: 'gray',
+        icon: SiUnity,
     },
 };

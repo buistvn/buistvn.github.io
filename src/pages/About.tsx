@@ -40,8 +40,8 @@ export const About = () => {
                             <br />
                             During my undergraduate education at OSU, I worked
                             on projects and took a variety of courses to explore
-                            the different fields of Computer Science. I spent
-                            the summer of 2021 working as a{' '}
+                            the different fields in Computer Science. I spent
+                            the summer of 2021 as a{' '}
                             <Link
                                 href="https://bright.md/blog/where-software-healthcare-meet-reflections-from-bright-mds-summer-engineering-intern"
                                 isExternal
@@ -49,14 +49,14 @@ export const About = () => {
                             >
                                 Software Engineering Intern at Bright.md
                             </Link>{' '}
-                            where I gained experience in web development. I'm
-                            also interested in cloud app development, operating
-                            systems, and game development.
+                            where I learned a lot about the world of software
+                            and tech. I'm interested in web development, cloud
+                            app development, and operating systems.
                             <br />
                             <br />
-                            In my free time, I enjoy watching movies, playing
-                            strategy games, learning piano, and discovering new
-                            music.
+                            In my free time, I enjoy watching movies, learning
+                            about history, playing games, and discovering new
+                            music to listen to.
                         </Text>
                         <Image
                             src="/profile.jpg"
