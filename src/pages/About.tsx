@@ -9,7 +9,7 @@ import {
     useColorModeValue,
     useMediaQuery,
 } from '@chakra-ui/react';
-import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaEnvelope, FaFileAlt, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export const About = () => {
     const linkColor = useColorModeValue('green.500', 'green.200');
@@ -105,10 +105,9 @@ export const About = () => {
                         >
                             Email
                         </Button>
-                        {/*
                         <Button
                             as={Link}
-                            href=""
+                            href="/StevenBuiResume.pdf"
                             isExternal
                             size={isLargerThan768 ? 'md' : 'sm'}
                             colorScheme="green"
@@ -116,7 +115,6 @@ export const About = () => {
                         >
                             Resume
                         </Button>
-                        */}
                     </Flex>
                 </Flex>
             </Flex>
