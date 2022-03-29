@@ -33,7 +33,7 @@ export const projects: Project[] = [
         description:
             'A mobile app that lets users browse video games and manage their game collections',
         tags: [tags['kotlin'], tags['androidstudio']],
-        image: '/game-collection.png',
+        image: 'https://raw.githubusercontent.com/buistvn/game-collection/main/docs/game-collection.png',
         repoLink: 'https://github.com/buistvn/game-collection',
         demoLink: undefined,
     },
@@ -42,7 +42,7 @@ export const projects: Project[] = [
         description:
             'A web app that lets users discover movies and keep track of their favorites and watchlists',
         tags: [tags['javascript'], tags['nextjs'], tags['chakraui']],
-        image: '/muvi.png',
+        image: 'https://raw.githubusercontent.com/buistvn/muvi/main/docs/muvi.png',
         repoLink: 'https://github.com/buistvn/muvi',
         demoLink: undefined,
     },
@@ -51,7 +51,7 @@ export const projects: Project[] = [
         description:
             'A Discord bot that features commands for moderation, alerts, and gaming',
         tags: [tags['javascript']],
-        image: '/lainavi.png',
+        image: 'https://raw.githubusercontent.com/buistvn/lainavi/main/docs/lainavi.png',
         repoLink: 'https://github.com/buistvn/lainavi',
         demoLink: undefined,
     },
@@ -60,7 +60,7 @@ export const projects: Project[] = [
         description:
             "A personal website that showcases the projects I've been working on",
         tags: [tags['typescript'], tags['react'], tags['chakraui']],
-        image: '/portfolio.png',
+        image: 'https://raw.githubusercontent.com/buistvn/stevenbui.dev/main/docs/portfolio.png',
         repoLink: 'https://github.com/buistvn/stevenbui.dev',
         demoLink: 'https://stevenbui.dev',
     },
@@ -74,7 +74,7 @@ export const projects: Project[] = [
             tags['express'],
             tags['mongodb'],
         ],
-        image: '/cloudvote.png',
+        image: 'https://raw.githubusercontent.com/buistvn/cloudvote/main/docs/cloudvote.png',
         repoLink: 'https://github.com/buistvn/cloudvote',
         demoLink: undefined,
     },

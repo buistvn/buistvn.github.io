@@ -12,6 +12,8 @@ import {
 } from '@chakra-ui/react';
 import { FaEnvelope, FaFileAlt, FaGithub, FaLinkedin } from 'react-icons/fa';
 
+import profile from '../assets/profile.jpg';
+
 export const About = () => {
     const linkColor = useColorModeValue('green.500', 'green.200');
     const placeholderColor = useColorModeValue('gray.100', 'gray.800');
@@ -61,7 +63,7 @@ export const About = () => {
                             music to listen to.
                         </Text>
                         <Image
-                            src="/profile.jpg"
+                            src={profile}
                             alt="Steven Bui"
                             fallback={
                                 <Box
