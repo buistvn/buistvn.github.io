@@ -1,4 +1,5 @@
 import { IconType } from 'react-icons';
+import { GrMysql } from 'react-icons/gr';
 import {
     SiAndroid,
     SiChakraui,
@@ -55,6 +56,11 @@ export const tags: Record<string, Tag> = {
         name: 'MongoDB',
         color: 'green',
         icon: SiMongodb,
+    },
+    mysql: {
+        name: 'MySQL',
+        color: 'blue',
+        icon: GrMysql,
     },
     nextjs: {
         name: 'Next.js',

@@ -47,6 +47,15 @@ export const projects: Project[] = [
         demoLink: undefined,
     },
     {
+        name: 'IMDb Scraper',
+        description:
+            'A script that extracts movie data from IMDb and stores the results',
+        tags: [tags['python'], tags['mysql']],
+        image: 'https://raw.githubusercontent.com/buistvn/imdb-scraper/main/docs/imdb-scraper.png',
+        repoLink: 'https://github.com/buistvn/imdb-scraper',
+        demoLink: undefined,
+    },
+    {
         name: 'Lainavi',
         description:
             'A Discord bot that features commands for moderation, alerts, and gaming',
