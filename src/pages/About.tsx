@@ -1,4 +1,5 @@
 import {
+    Box,
     Button,
     Divider,
     Flex,
@@ -13,6 +14,7 @@ import { FaEnvelope, FaFileAlt, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export const About = () => {
     const linkColor = useColorModeValue('green.500', 'green.200');
+    const placeholderColor = useColorModeValue('gray.100', 'gray.800');
 
     const [isLargerThan768] = useMediaQuery('(min-width: 768px)');
 
@@ -60,7 +62,15 @@ export const About = () => {
                         </Text>
                         <Image
                             src="/profile.jpg"
-                            alt="profile"
+                            alt="Steven Bui"
+                            fallback={
+                                <Box
+                                    minWidth="256px"
+                                    minHeight="256px"
+                                    borderRadius="full"
+                                    backgroundColor={placeholderColor}
+                                />
+                            }
                             boxSize="256px"
                             borderRadius="full"
                         />

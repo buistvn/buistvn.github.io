@@ -15,6 +15,7 @@ import {
 } from '@chakra-ui/react';
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 
+import { ProjectPlaceholder } from './ProjectPlaceholder';
 import { Project } from '../data/projects';
 
 type ProjectCardProps = {
@@ -33,6 +34,8 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
         <Box position="relative">
             <Image
                 src={project.image}
+                alt={project.name}
+                fallback={<ProjectPlaceholder />}
                 width={['100%', '100%', '100%', '100%', '80%']}
                 border="1px"
                 borderColor={borderColor}
