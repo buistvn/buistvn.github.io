@@ -1,4 +1,5 @@
 import {
+    AspectRatio,
     Box,
     Divider,
     Flex,
@@ -29,96 +30,164 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
     const textColor = useColorModeValue('gray.500', 'gray.400');
 
     const [isLargerThan768] = useMediaQuery('(min-width: 768px)');
+    const [isLargerThan1200] = useMediaQuery('(min-width: 1200px)');
 
-    return (
-        <Box position="relative">
-            <Image
-                src={project.image}
-                alt={project.name}
-                fallback={<ProjectPlaceholder />}
-                width={['100%', '100%', '100%', '100%', '80%']}
-                border="1px"
-                borderColor={borderColor}
-                borderTopRadius="16px"
-                borderBottomRadius={['0px', '0px', '0px', '0px', '16px']}
-                boxShadow="md"
-            />
-            <Flex
-                flexDirection="column"
-                rowGap="8px"
-                position={['static', 'static', 'static', 'static', 'absolute']}
-                top={['100%', '100%', '100%', '100%', '50%']}
-                right="0%"
-                transform={[
-                    'none',
-                    'none',
-                    'none',
-                    'none',
-                    'translate(0%, -50%)',
-                ]}
-                width={['100%', '100%', '100%', '100%', '40%']}
-                padding={['16px', '16px', '24px', '24px', '24px']}
-                border="1px"
-                borderColor={borderColor}
-                borderTopRadius={['0px', '0px', '0px', '0px', '16px']}
-                borderBottomRadius="16px"
-                boxShadow="md"
-                backgroundColor={backgroundColor}
-            >
-                <Flex justifyContent="space-between" alignItems="center">
-                    <Heading
-                        fontSize={['24px', '24px', '36px', '36px', '36px']}
-                    >
-                        {project.name}
-                    </Heading>
-                    <Flex alignItems="center" columnGap="16px">
-                        {project.repoLink && (
-                            <Link
-                                href={project.repoLink}
-                                isExternal
-                                width="24px"
-                                height="24px"
-                            >
-                                <Icon
-                                    as={FaGithub}
-                                    width="100%"
-                                    height="100%"
-                                    _hover={{ color: iconColor }}
-                                />
-                            </Link>
-                        )}
-                        {project.demoLink && (
-                            <Link
-                                href={project.demoLink}
-                                isExternal
-                                width="24px"
-                                height="24px"
-                            >
-                                <Icon
-                                    as={FaExternalLinkAlt}
-                                    width="100%"
-                                    height="100%"
-                                    _hover={{ color: iconColor }}
-                                />
-                            </Link>
-                        )}
+    if (isLargerThan1200) {
+        return (
+            <Box position="relative">
+                <AspectRatio ratio={16 / 9} width="80%">
+                    <Image
+                        src={project.image}
+                        alt={project.name}
+                        fallback={<ProjectPlaceholder />}
+                        border="1px"
+                        borderColor={borderColor}
+                        borderRadius="16px"
+                        boxShadow="md"
+                    />
+                </AspectRatio>
+                <Flex
+                    flexDirection="column"
+                    rowGap="8px"
+                    position="absolute"
+                    top="50%"
+                    right="0%"
+                    transform="translate(0%, -50%)"
+                    width="40%"
+                    padding="24px"
+                    border="1px"
+                    borderColor={borderColor}
+                    borderRadius="16px"
+                    boxShadow="md"
+                    backgroundColor={backgroundColor}
+                >
+                    <Flex justifyContent="space-between" alignItems="center">
+                        <Heading fontSize="36px">{project.name}</Heading>
+                        <Flex alignItems="center" columnGap="16px">
+                            {project.repoLink && (
+                                <Link
+                                    href={project.repoLink}
+                                    isExternal
+                                    width="24px"
+                                    height="24px"
+                                >
+                                    <Icon
+                                        as={FaGithub}
+                                        width="100%"
+                                        height="100%"
+                                        _hover={{ color: iconColor }}
+                                    />
+                                </Link>
+                            )}
+                            {project.demoLink && (
+                                <Link
+                                    href={project.demoLink}
+                                    isExternal
+                                    width="24px"
+                                    height="24px"
+                                >
+                                    <Icon
+                                        as={FaExternalLinkAlt}
+                                        width="100%"
+                                        height="100%"
+                                        _hover={{ color: iconColor }}
+                                    />
+                                </Link>
+                            )}
+                        </Flex>
                     </Flex>
+                    <Flex flexWrap="wrap" gap="8px">
+                        {project.tags.map((tag) => (
+                            <Tag colorScheme={tag.color} key={tag.name}>
+                                <TagLeftIcon as={tag.icon} />
+                                <TagLabel>{tag.name}</TagLabel>
+                            </Tag>
+                        ))}
+                    </Flex>
+                    <Divider />
+                    <Text color={textColor}>{project.description}</Text>
                 </Flex>
-                <Flex flexWrap="wrap" gap="8px">
-                    {project.tags.map((tag) => (
-                        <Tag
-                            size={isLargerThan768 ? 'md' : 'sm'}
-                            colorScheme={tag.color}
-                            key={tag.name}
-                        >
-                            <TagLeftIcon as={tag.icon} />
-                            <TagLabel>{tag.name}</TagLabel>
-                        </Tag>
-                    ))}
+            </Box>
+        );
+    } else {
+        return (
+            <Flex
+                flexDir="column"
+                alignItems="center"
+                border="1px"
+                borderColor={borderColor}
+                borderRadius="16px"
+                boxShadow="md"
+            >
+                <AspectRatio ratio={16 / 9} width="100%">
+                    <Image
+                        src={project.image}
+                        alt={project.name}
+                        fallback={<ProjectPlaceholder />}
+                        borderTopRadius="16px"
+                    />
+                </AspectRatio>
+                <Flex
+                    flexDirection="column"
+                    rowGap="8px"
+                    width="100%"
+                    padding={['16px', '16px', '24px', '24px']}
+                    borderBottomRadius="16px"
+                    backgroundColor={backgroundColor}
+                >
+                    <Flex justifyContent="space-between" alignItems="center">
+                        <Heading fontSize={['24px', '24px', '36px', '36px']}>
+                            {project.name}
+                        </Heading>
+                        <Flex alignItems="center" columnGap="16px">
+                            {project.repoLink && (
+                                <Link
+                                    href={project.repoLink}
+                                    isExternal
+                                    width="24px"
+                                    height="24px"
+                                >
+                                    <Icon
+                                        as={FaGithub}
+                                        width="100%"
+                                        height="100%"
+                                        _hover={{ color: iconColor }}
+                                    />
+                                </Link>
+                            )}
+                            {project.demoLink && (
+                                <Link
+                                    href={project.demoLink}
+                                    isExternal
+                                    width="24px"
+                                    height="24px"
+                                >
+                                    <Icon
+                                        as={FaExternalLinkAlt}
+                                        width="100%"
+                                        height="100%"
+                                        _hover={{ color: iconColor }}
+                                    />
+                                </Link>
+                            )}
+                        </Flex>
+                    </Flex>
+                    <Flex flexWrap="wrap" gap="8px">
+                        {project.tags.map((tag) => (
+                            <Tag
+                                size={isLargerThan768 ? 'md' : 'sm'}
+                                colorScheme={tag.color}
+                                key={tag.name}
+                            >
+                                <TagLeftIcon as={tag.icon} />
+                                <TagLabel>{tag.name}</TagLabel>
+                            </Tag>
+                        ))}
+                    </Flex>
+                    <Divider />
+                    <Text color={textColor}>{project.description}</Text>
                 </Flex>
-                <Divider />
-                <Text color={textColor}>{project.description}</Text>
             </Flex>
-        </Box>
-    );
+        );
+    }
 };
