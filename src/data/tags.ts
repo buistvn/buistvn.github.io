@@ -3,12 +3,15 @@ import { GrMysql } from 'react-icons/gr';
 import {
     SiAndroid,
     SiChakraui,
+    SiCplusplus,
     SiCsharp,
     SiExpress,
     SiJavascript,
     SiKotlin,
     SiMongodb,
     SiNextdotjs,
+    SiNodedotjs,
+    SiOpengl,
     SiPython,
     SiReact,
     SiTypescript,
@@ -31,6 +34,11 @@ export const tags: Record<string, Tag> = {
         name: 'Chakra UI',
         color: 'teal',
         icon: SiChakraui,
+    },
+    cplusplus: {
+        name: 'C++',
+        color: 'pink',
+        icon: SiCplusplus,
     },
     csharp: {
         name: 'C#',
@@ -66,6 +74,16 @@ export const tags: Record<string, Tag> = {
         name: 'Next.js',
         color: 'gray',
         icon: SiNextdotjs,
+    },
+    nodejs: {
+        name: 'Node.js',
+        color: 'green',
+        icon: SiNodedotjs,
+    },
+    opengl: {
+        name: 'OpenGL',
+        color: 'blue',
+        icon: SiOpengl,
     },
     python: {
         name: 'Python',

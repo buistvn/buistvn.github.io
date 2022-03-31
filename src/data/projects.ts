@@ -47,9 +47,17 @@ export const projects: Project[] = [
         demoLink: undefined,
     },
     {
-        name: 'IMDb Scraper',
+        name: 'Solar Sim',
         description:
-            'A script that extracts movie data from IMDb and stores the results',
+            'A 3D simulator that displays an interactive model of the solar system',
+        tags: [tags['cplusplus'], tags['opengl']],
+        image: 'https://raw.githubusercontent.com/buistvn/solar-sim/main/docs/solar-sim.png',
+        repoLink: 'https://github.com/buistvn/solar-sim',
+        demoLink: undefined,
+    },
+    {
+        name: 'IMDb Scraper',
+        description: 'A script that extracts and stores movie data from IMDb',
         tags: [tags['python'], tags['mysql']],
         image: 'https://raw.githubusercontent.com/buistvn/imdb-scraper/main/docs/imdb-scraper.png',
         repoLink: 'https://github.com/buistvn/imdb-scraper',
@@ -59,7 +67,7 @@ export const projects: Project[] = [
         name: 'Lainavi',
         description:
             'A Discord bot that features commands for moderation, alerts, and gaming',
-        tags: [tags['javascript']],
+        tags: [tags['javascript'], tags['nodejs']],
         image: 'https://raw.githubusercontent.com/buistvn/lainavi/main/docs/lainavi.png',
         repoLink: 'https://github.com/buistvn/lainavi',
         demoLink: undefined,
