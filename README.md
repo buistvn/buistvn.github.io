@@ -3,7 +3,7 @@
 
 ![Project Screenshot][project-screenshot]
 
-This is my personal website for showcasing my projects. It will occasionally be updated to include new projects or features that I would like to add. Whenever changes are pushed to the `main` branch, there is a [GitHub Actions](https://docs.github.com/en/actions) workflow that is set up to automatically build and deploy the website.
+This is my personal website for showcasing my projects. It will occasionally be updated to include new projects or features that I would like to add. There is a [GitHub Actions](https://docs.github.com/en/actions) workflow that is set up to automatically build and deploy the website whenever changes are pushed to the `main` branch.
 
 
 

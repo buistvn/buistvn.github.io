@@ -53,14 +53,14 @@ export const About = () => {
                             >
                                 Software Engineering Intern at Bright.md
                             </Link>{' '}
-                            which taught me a lot about the world of software
+                            where I learned a lot about the world of software
                             and tech. I'm interested in cloud app development,
                             web development, and operating systems.
                             <br />
                             <br />
                             In my free time, I enjoy watching movies, learning
-                            about history, playing games, and discovering new
-                            music to listen to.
+                            about history, playing video games, and discovering
+                            new music to listen to.
                         </Text>
                         <Image
                             src={profile}
