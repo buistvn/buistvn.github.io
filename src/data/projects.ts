@@ -19,7 +19,6 @@ export const projects: Project[] = [
         repoLink: "",
         demoLink: "",
     },
-    */
     {
         name: 'ML Tower Defense',
         description: 'Senior Capstone project',
@@ -28,6 +27,7 @@ export const projects: Project[] = [
         repoLink: 'https://github.com/ML-Tower-Defense/capstone',
         demoLink: undefined,
     },
+    */
     {
         name: 'Game Collection',
         description:
