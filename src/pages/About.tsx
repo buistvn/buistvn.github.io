@@ -1,24 +1,20 @@
 import {
     Box,
-    Button,
     Flex,
     Heading,
     Image,
     Link,
     Text,
     useColorModeValue,
-    useMediaQuery,
 } from '@chakra-ui/react';
-import { FaEnvelope, FaFileAlt, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 import profile from '../assets/profile.jpg';
 import { Footer } from '../components/Footer';
+import { LinkList } from '../components/LinkList';
 
 export const About = () => {
     const linkColor = useColorModeValue('green.500', 'green.200');
     const placeholderColor = useColorModeValue('gray.100', 'gray.800');
-
-    const [isLargerThan768] = useMediaQuery('(min-width: 768px)');
 
     return (
         <Flex flexDirection="column" alignItems="center">
@@ -78,51 +74,7 @@ export const About = () => {
                             borderRadius="full"
                         />
                     </Flex>
-                    <Flex
-                        flexDirection={['column', 'row', 'row', 'row']}
-                        gap="16px"
-                    >
-                        <Button
-                            as={Link}
-                            href="https://www.linkedin.com/in/buistvn"
-                            isExternal
-                            size={isLargerThan768 ? 'md' : 'sm'}
-                            colorScheme="green"
-                            leftIcon={<FaLinkedin />}
-                        >
-                            LinkedIn
-                        </Button>
-                        <Button
-                            as={Link}
-                            href="https://github.com/buistvn"
-                            isExternal
-                            size={isLargerThan768 ? 'md' : 'sm'}
-                            colorScheme="green"
-                            leftIcon={<FaGithub />}
-                        >
-                            GitHub
-                        </Button>
-                        <Button
-                            as={Link}
-                            href="mailto:bui.stvn@gmail.com"
-                            isExternal
-                            size={isLargerThan768 ? 'md' : 'sm'}
-                            colorScheme="green"
-                            leftIcon={<FaEnvelope />}
-                        >
-                            Email
-                        </Button>
-                        <Button
-                            as={Link}
-                            href="/StevenBuiResume.pdf"
-                            isExternal
-                            size={isLargerThan768 ? 'md' : 'sm'}
-                            colorScheme="green"
-                            leftIcon={<FaFileAlt />}
-                        >
-                            Resume
-                        </Button>
-                    </Flex>
+                    <LinkList />
                 </Flex>
             </Flex>
             <Footer />
