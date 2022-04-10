@@ -1,7 +1,6 @@
 import {
     Box,
     Button,
-    Divider,
     Flex,
     Heading,
     Image,
@@ -13,6 +12,7 @@ import {
 import { FaEnvelope, FaFileAlt, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 import profile from '../assets/profile.jpg';
+import { Footer } from '../components/Footer';
 
 export const About = () => {
     const linkColor = useColorModeValue('green.500', 'green.200');
@@ -21,11 +21,12 @@ export const About = () => {
     const [isLargerThan768] = useMediaQuery('(min-width: 768px)');
 
     return (
-        <Flex justifyContent="center" marginY="64px">
+        <Flex flexDirection="column" alignItems="center">
             <Flex
                 flexDirection="column"
                 rowGap={['32px', '32px', '64px', '64px']}
                 width={['95%', '95%', '85%', '75%']}
+                marginY="64px"
             >
                 <Flex flexDirection="column" rowGap="16px">
                     <Heading fontSize={['36px', '36px', '48px', '48px']}>
@@ -77,12 +78,6 @@ export const About = () => {
                             borderRadius="full"
                         />
                     </Flex>
-                </Flex>
-                <Divider />
-                <Flex flexDirection="column" rowGap="16px">
-                    <Heading fontSize={['36px', '36px', '48px', '48px']}>
-                        Contact
-                    </Heading>
                     <Flex
                         flexDirection={['column', 'row', 'row', 'row']}
                         gap="16px"
@@ -130,6 +125,7 @@ export const About = () => {
                     </Flex>
                 </Flex>
             </Flex>
+            <Footer />
         </Flex>
     );
 };

@@ -1,15 +1,17 @@
-import { Divider, Flex, Heading, Text } from '@chakra-ui/react';
+import { Flex, Heading, Text } from '@chakra-ui/react';
 
+import { Footer } from '../components/Footer';
 import { ProjectList } from '../components/ProjectList';
 import { projects } from '../data/projects';
 
 export const Projects = () => {
     return (
-        <Flex justifyContent="center" marginY="64px">
+        <Flex flexDirection="column" alignItems="center">
             <Flex
                 flexDirection="column"
                 rowGap={['32px', '32px', '64px', '64px']}
                 width={['95%', '95%', '85%', '75%']}
+                marginY="64px"
             >
                 <Flex flexDirection="column" rowGap="16px">
                     <Heading fontSize={['36px', '36px', '48px', '48px']}>
@@ -19,9 +21,9 @@ export const Projects = () => {
                         You can check out what I've been working on below.
                     </Text>
                 </Flex>
-                <Divider />
                 <ProjectList projects={projects} />
             </Flex>
+            <Footer />
         </Flex>
     );
 };
