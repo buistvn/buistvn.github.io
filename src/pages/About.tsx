@@ -50,14 +50,13 @@ export const About = () => {
                             >
                                 Software Engineering Intern at Bright.md
                             </Link>{' '}
-                            where I learned a lot about the world of software
-                            and tech. I'm interested in cloud app development
+                            where I worked on front-end development and design
+                            systems. I'm passionate about cloud app development
                             and web development.
                             <br />
                             <br />
-                            In my free time, I enjoy watching movies, learning
-                            about history, playing video games, and discovering
-                            new music to listen to.
+                            In my free time, my interests include film, history,
+                            music, video games, board games, and swimming.
                         </Text>
                         <Image
                             src={profile}
