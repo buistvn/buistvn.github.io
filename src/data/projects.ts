@@ -41,7 +41,12 @@ export const projects: Project[] = [
         name: 'MUVI',
         description:
             'A web app that lets users discover movies and keep track of their favorites and watchlists',
-        tags: [tags['javascript'], tags['nextjs'], tags['chakraui']],
+        tags: [
+            tags['javascript'],
+            tags['react'],
+            tags['nextjs'],
+            tags['chakraui'],
+        ],
         image: 'https://raw.githubusercontent.com/buistvn/muvi/main/docs/muvi.png',
         repoLink: 'https://github.com/buistvn/muvi',
         demoLink: undefined,

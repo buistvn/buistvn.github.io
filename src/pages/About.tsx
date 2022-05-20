@@ -40,9 +40,9 @@ export const About = () => {
                             <br />
                             <br />
                             During my undergraduate education at OSU, I took on
-                            a variety of projects and courses to explore the
-                            different fields in Computer Science. In 2021, I was
-                            a{' '}
+                            a variety of courses and projects to explore the
+                            different fields in Computer Science. For the summer
+                            of 2021, I was a{' '}
                             <Link
                                 href="https://bright.md/blog/where-software-healthcare-meet-reflections-from-bright-mds-summer-engineering-intern"
                                 isExternal
@@ -56,7 +56,7 @@ export const About = () => {
                             <br />
                             <br />
                             Aside from coding, my interests include film,
-                            history, music, video games, and swimming.
+                            history, music, strategy games, and swimming.
                         </Text>
                         <Image
                             src={profile}
