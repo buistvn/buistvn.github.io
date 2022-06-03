@@ -56,7 +56,7 @@ export const About = () => {
                             <br />
                             <br />
                             Aside from coding, my interests include film,
-                            history, music, strategy games, and swimming.
+                            history, architecture, video games, and music.
                         </Text>
                         <Image
                             src={profile}

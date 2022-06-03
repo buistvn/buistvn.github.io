@@ -16,19 +16,19 @@ export const Footer = () => {
                 <Flex columnGap="16px">
                     <IconButton
                         as={Link}
-                        href="https://www.linkedin.com/in/buistvn"
-                        isExternal
-                        variant="ghost"
-                        icon={<FaLinkedin />}
-                        aria-label="Link to LinkedIn"
-                    />
-                    <IconButton
-                        as={Link}
                         href="https://github.com/buistvn"
                         isExternal
                         variant="ghost"
                         icon={<FaGithub />}
                         aria-label="Link to GitHub"
+                    />
+                    <IconButton
+                        as={Link}
+                        href="https://www.linkedin.com/in/buistvn"
+                        isExternal
+                        variant="ghost"
+                        icon={<FaLinkedin />}
+                        aria-label="Link to LinkedIn"
                     />
                 </Flex>
             </Flex>

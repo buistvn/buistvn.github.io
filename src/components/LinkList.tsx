@@ -1,5 +1,5 @@
 import { Button, Flex, Link, useMediaQuery } from '@chakra-ui/react';
-import { FaEnvelope, FaFileAlt, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export const LinkList = () => {
     const [isLargerThan768] = useMediaQuery('(min-width: 768px)');
@@ -12,16 +12,6 @@ export const LinkList = () => {
         >
             <Button
                 as={Link}
-                href="https://www.linkedin.com/in/buistvn"
-                isExternal
-                size={isLargerThan768 ? 'md' : 'sm'}
-                colorScheme="green"
-                leftIcon={<FaLinkedin />}
-            >
-                LinkedIn
-            </Button>
-            <Button
-                as={Link}
                 href="https://github.com/buistvn"
                 isExternal
                 size={isLargerThan768 ? 'md' : 'sm'}
@@ -32,6 +22,16 @@ export const LinkList = () => {
             </Button>
             <Button
                 as={Link}
+                href="https://www.linkedin.com/in/buistvn"
+                isExternal
+                size={isLargerThan768 ? 'md' : 'sm'}
+                colorScheme="green"
+                leftIcon={<FaLinkedin />}
+            >
+                LinkedIn
+            </Button>
+            <Button
+                as={Link}
                 href="mailto:bui.stvn@gmail.com"
                 isExternal
                 size={isLargerThan768 ? 'md' : 'sm'}
@@ -39,16 +39,6 @@ export const LinkList = () => {
                 leftIcon={<FaEnvelope />}
             >
                 Email
-            </Button>
-            <Button
-                as={Link}
-                href="/StevenBuiResume.pdf"
-                isExternal
-                size={isLargerThan768 ? 'md' : 'sm'}
-                colorScheme="green"
-                leftIcon={<FaFileAlt />}
-            >
-                Resume
             </Button>
         </Flex>
     );
