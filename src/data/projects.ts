@@ -19,15 +19,24 @@ export const projects: Project[] = [
         repoLink: "",
         demoLink: "",
     },
+    */
     {
-        name: 'ML Tower Defense',
-        description: 'Senior Capstone project',
-        tags: [tags['csharp'], tags['unity']],
-        image: '/ml-tower-defense.png',
-        repoLink: 'https://github.com/ML-Tower-Defense/capstone',
+        name: 'Tarpaulin',
+        description:
+            'A RESTful API that stores and provides data for a learning management system',
+        tags: [
+            tags['javascript'],
+            tags['express'],
+            tags['docker'],
+            tags['mysql'],
+            tags['redis'],
+            tags['sequelize'],
+            tags['jsonwebtoken'],
+        ],
+        image: 'https://raw.githubusercontent.com/buistvn/tarpaulin/main/docs/tarpaulin.png',
+        repoLink: 'https://github.com/buistvn/tarpaulin',
         demoLink: undefined,
     },
-    */
     {
         name: 'Game Collection',
         description:
@@ -95,6 +104,7 @@ export const projects: Project[] = [
             tags['react'],
             tags['express'],
             tags['mongodb'],
+            tags['jsonwebtoken'],
         ],
         image: 'https://raw.githubusercontent.com/buistvn/cloudvote/main/docs/cloudvote.png',
         repoLink: 'https://github.com/buistvn/cloudvote',

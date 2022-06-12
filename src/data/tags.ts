@@ -4,9 +4,10 @@ import {
     SiAndroid,
     SiChakraui,
     SiCplusplus,
-    SiCsharp,
+    SiDocker,
     SiExpress,
     SiJavascript,
+    SiJsonwebtokens,
     SiKotlin,
     SiMongodb,
     SiNextdotjs,
@@ -14,8 +15,9 @@ import {
     SiOpengl,
     SiPython,
     SiReact,
+    SiRedis,
+    SiSequelize,
     SiTypescript,
-    SiUnity,
 } from 'react-icons/si';
 
 export interface Tag {
@@ -40,10 +42,10 @@ export const tags: Record<string, Tag> = {
         color: 'pink',
         icon: SiCplusplus,
     },
-    csharp: {
-        name: 'C#',
-        color: 'green',
-        icon: SiCsharp,
+    docker: {
+        name: 'Docker',
+        color: 'blue',
+        icon: SiDocker,
     },
     express: {
         name: 'Express',
@@ -54,6 +56,11 @@ export const tags: Record<string, Tag> = {
         name: 'JavaScript',
         color: 'yellow',
         icon: SiJavascript,
+    },
+    jsonwebtoken: {
+        name: 'JSON Web Token',
+        color: 'gray',
+        icon: SiJsonwebtokens,
     },
     kotlin: {
         name: 'Kotlin',
@@ -95,14 +102,19 @@ export const tags: Record<string, Tag> = {
         color: 'blue',
         icon: SiReact,
     },
+    redis: {
+        name: 'Redis',
+        color: 'red',
+        icon: SiRedis,
+    },
+    sequelize: {
+        name: 'Sequelize',
+        color: 'blue',
+        icon: SiSequelize,
+    },
     typescript: {
         name: 'TypeScript',
         color: 'blue',
         icon: SiTypescript,
-    },
-    unity: {
-        name: 'Unity',
-        color: 'gray',
-        icon: SiUnity,
     },
 };

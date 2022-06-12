@@ -34,8 +34,8 @@ export const About = () => {
                         gap={['32px', '32px', '64px', '64px']}
                     >
                         <Text fontSize={['16px', '16px', '18px', '20px']}>
-                            Hi, my name is Steven. I'm currently a fourth year
-                            student at Oregon State University majoring in
+                            Hi, my name is Steven. I recently graduated from
+                            Oregon State University with a Bachelor's Degree in
                             Computer Science.
                             <br />
                             <br />
@@ -51,12 +51,12 @@ export const About = () => {
                                 Software Engineering Intern at Bright.md
                             </Link>{' '}
                             where I worked on front-end development and design
-                            systems. I'm passionate about cloud application
-                            development and web development.
+                            systems. Overall, I'm passionate about cloud
+                            application development and web development.
                             <br />
                             <br />
-                            Aside from coding, my interests include film,
-                            history, architecture, video games, and music.
+                            In my free time, my interests include film, history,
+                            architecture, music, and video games.
                         </Text>
                         <Image
                             src={profile}
