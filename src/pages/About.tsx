@@ -41,7 +41,7 @@ export const About = () => {
                             <br />
                             During my undergraduate education at OSU, I took on
                             a variety of courses and projects to explore the
-                            different fields in Computer Science. For the summer
+                            different fields of Computer Science. For the summer
                             of 2021, I was a{' '}
                             <Link
                                 href="https://bright.md/blog/where-software-healthcare-meet-reflections-from-bright-mds-summer-engineering-intern"
@@ -56,7 +56,7 @@ export const About = () => {
                             <br />
                             <br />
                             In my free time, my interests include film, history,
-                            architecture, music, and video games.
+                            architecture, music, design, and video games.
                         </Text>
                         <Image
                             src={profile}

@@ -91,7 +91,7 @@ export const projects: Project[] = [
         description:
             "A personal website that showcases the projects I've been working on",
         tags: [tags['typescript'], tags['react'], tags['chakraui']],
-        image: 'https://raw.githubusercontent.com/buistvn/stevenbui.dev/main/docs/portfolio.png',
+        image: 'https://raw.githubusercontent.com/buistvn/stevenbui.dev/main/docs/stevenbui.dev.png',
         repoLink: 'https://github.com/buistvn/stevenbui.dev',
         demoLink: 'https://stevenbui.dev',
     },

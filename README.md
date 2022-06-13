@@ -17,4 +17,4 @@ This is my personal website for showcasing my projects. It will occasionally be 
 
 
 <!-- LINKS & IMAGES -->
-[project-screenshot]: /docs/portfolio.png
+[project-screenshot]: /docs/stevenbui.dev.png

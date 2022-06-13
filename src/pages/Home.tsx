@@ -1,17 +1,22 @@
 import { useEffect, useState } from 'react';
 import {
     Box,
+    Flex,
     Heading,
+    Text,
     useColorModeValue,
     useMediaQuery,
 } from '@chakra-ui/react';
 import Particles from 'react-tsparticles';
 
 export const Home = () => {
-    const [distance, setDistance] = useState(0);
+    const [distance, setDistance] = useState(150);
 
-    const backgroundColor = useColorModeValue('#68D391', '#38A169');
-    const particleColor = useColorModeValue('#1A202C', '#FFFFFF');
+    const particleColor = useColorModeValue('#CBD5E0', '#4A5568');
+    const gradientColor = useColorModeValue(
+        'linear(to-r, green.500, purple.500)',
+        'linear(to-r, green.200, purple.200)'
+    );
 
     const [isLargerThan768] = useMediaQuery('(min-width: 768px)');
 
@@ -31,11 +36,6 @@ export const Home = () => {
                     fullScreen: {
                         enable: true,
                         zIndex: -1,
-                    },
-                    background: {
-                        color: {
-                            value: backgroundColor,
-                        },
                     },
                     particles: {
                         color: {
@@ -60,16 +60,26 @@ export const Home = () => {
                     },
                 }}
             />
-            <Heading
+            <Flex
+                flexDirection="column"
+                alignItems="center"
                 position="absolute"
                 top="42%"
                 right="50%"
                 transform="translate(50%, -50%)"
-                fontSize={['36px', '48px', '60px', '72px']}
-                whiteSpace="nowrap"
             >
-                Steven Bui
-            </Heading>
+                <Heading
+                    fontSize={['36px', '48px', '60px', '72px']}
+                    bgGradient={gradientColor}
+                    bgClip="text"
+                    whiteSpace="nowrap"
+                >
+                    Steven Bui
+                </Heading>
+                <Text fontSize={['12px', '16px', '20px', '24px']}>
+                    Software Engineer
+                </Text>
+            </Flex>
         </Box>
     );
 };
