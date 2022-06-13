@@ -12,6 +12,7 @@ import Particles from 'react-tsparticles';
 export const Home = () => {
     const [distance, setDistance] = useState(150);
 
+    const backgroundColor = useColorModeValue('#FFFFFF', '#171923');
     const particleColor = useColorModeValue('#CBD5E0', '#4A5568');
     const gradientColor = useColorModeValue(
         'linear(to-r, green.500, purple.500)',
@@ -36,6 +37,11 @@ export const Home = () => {
                     fullScreen: {
                         enable: true,
                         zIndex: -1,
+                    },
+                    background: {
+                        color: {
+                            value: backgroundColor,
+                        },
                     },
                     particles: {
                         color: {
