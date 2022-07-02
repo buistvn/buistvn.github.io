@@ -15,8 +15,8 @@ export const Home = () => {
     const backgroundColor = useColorModeValue('#FFFFFF', '#171923');
     const particleColor = useColorModeValue('#CBD5E0', '#4A5568');
     const gradientColor = useColorModeValue(
-        'linear(to-r, green.500, purple.500)',
-        'linear(to-r, green.200, purple.200)'
+        'linear(to-r, green.500, blue.500)',
+        'linear(to-r, green.200, blue.200)'
     );
 
     const [isLargerThan768] = useMediaQuery('(min-width: 768px)');
