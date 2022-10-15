@@ -1,7 +1,6 @@
 import { IconType } from 'react-icons';
 import { GrMysql } from 'react-icons/gr';
 import {
-    SiAndroid,
     SiChakraui,
     SiCplusplus,
     SiDocker,
@@ -11,7 +10,6 @@ import {
     SiKotlin,
     SiMongodb,
     SiNextdotjs,
-    SiNodedotjs,
     SiOpengl,
     SiPython,
     SiReact,
@@ -27,11 +25,6 @@ export interface Tag {
 }
 
 export const tags: Record<string, Tag> = {
-    androidstudio: {
-        name: 'Android Studio',
-        color: 'green',
-        icon: SiAndroid,
-    },
     chakraui: {
         name: 'Chakra UI',
         color: 'teal',
@@ -57,8 +50,8 @@ export const tags: Record<string, Tag> = {
         color: 'yellow',
         icon: SiJavascript,
     },
-    jsonwebtoken: {
-        name: 'JSON Web Token',
+    jsonwebtokens: {
+        name: 'JSON Web Tokens',
         color: 'gray',
         icon: SiJsonwebtokens,
     },
@@ -81,11 +74,6 @@ export const tags: Record<string, Tag> = {
         name: 'Next.js',
         color: 'gray',
         icon: SiNextdotjs,
-    },
-    nodejs: {
-        name: 'Node.js',
-        color: 'green',
-        icon: SiNodedotjs,
     },
     opengl: {
         name: 'OpenGL',
