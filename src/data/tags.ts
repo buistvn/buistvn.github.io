@@ -1,13 +1,20 @@
 import { IconType } from 'react-icons';
 import { GrMysql } from 'react-icons/gr';
 import {
+    SiAngular,
     SiChakraui,
     SiCplusplus,
+    SiCsharp,
+    SiCypress,
     SiDocker,
+    SiDotnet,
     SiExpress,
     SiJavascript,
+    SiJest,
     SiJsonwebtokens,
     SiKotlin,
+    SiMicrosoftazure,
+    SiMicrosoftsqlserver,
     SiMongodb,
     SiNextdotjs,
     SiOpengl,
@@ -15,6 +22,7 @@ import {
     SiReact,
     SiRedis,
     SiSequelize,
+    SiStorybook,
     SiTypescript,
 } from 'react-icons/si';
 
@@ -25,6 +33,16 @@ export interface Tag {
 }
 
 export const tags: Record<string, Tag> = {
+    angular: {
+        name: 'Angular',
+        color: 'red',
+        icon: SiAngular,
+    },
+    azure: {
+        name: 'Azure',
+        color: 'blue',
+        icon: SiMicrosoftazure,
+    },
     chakraui: {
         name: 'Chakra UI',
         color: 'teal',
@@ -35,10 +53,25 @@ export const tags: Record<string, Tag> = {
         color: 'pink',
         icon: SiCplusplus,
     },
+    csharp: {
+        name: 'C#',
+        color: 'green',
+        icon: SiCsharp,
+    },
+    cypress: {
+        name: 'Cypress',
+        color: 'gray',
+        icon: SiCypress,
+    },
     docker: {
         name: 'Docker',
         color: 'blue',
         icon: SiDocker,
+    },
+    dotnet: {
+        name: '.NET',
+        color: 'purple',
+        icon: SiDotnet,
     },
     express: {
         name: 'Express',
@@ -49,6 +82,11 @@ export const tags: Record<string, Tag> = {
         name: 'JavaScript',
         color: 'yellow',
         icon: SiJavascript,
+    },
+    jest: {
+        name: 'Jest',
+        color: 'red',
+        icon: SiJest,
     },
     jsonwebtokens: {
         name: 'JSON Web Tokens',
@@ -99,6 +137,16 @@ export const tags: Record<string, Tag> = {
         name: 'Sequelize',
         color: 'blue',
         icon: SiSequelize,
+    },
+    sqlserver: {
+        name: 'SQL Server',
+        color: 'red',
+        icon: SiMicrosoftsqlserver,
+    },
+    storybook: {
+        name: 'Storybook',
+        color: 'pink',
+        icon: SiStorybook,
     },
     typescript: {
         name: 'TypeScript',

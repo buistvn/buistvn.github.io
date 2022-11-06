@@ -96,6 +96,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
                             )}
                         </Flex>
                     </Flex>
+                    <Divider />
                     <Flex flexWrap="wrap" gap="8px">
                         {project.tags.map((tag) => (
                             <Tag colorScheme={tag.color} key={tag.name}>
@@ -104,7 +105,6 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
                             </Tag>
                         ))}
                     </Flex>
-                    <Divider />
                     <Text color={textColor}>{project.description}</Text>
                 </Flex>
             </Box>
@@ -112,7 +112,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
     } else {
         return (
             <Flex
-                flexDir="column"
+                flexDirection="column"
                 alignItems="center"
                 border="1px"
                 borderColor={borderColor}
@@ -172,6 +172,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
                             )}
                         </Flex>
                     </Flex>
+                    <Divider />
                     <Flex flexWrap="wrap" gap="8px">
                         {project.tags.map((tag) => (
                             <Tag
@@ -184,7 +185,6 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
                             </Tag>
                         ))}
                     </Flex>
-                    <Divider />
                     <Text color={textColor}>{project.description}</Text>
                 </Flex>
             </Flex>
